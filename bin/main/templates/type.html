@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A Type of Car</title>
+</head>
+<body>
+    <h1>A Single Type of Car</h1>
+
+    <div th:each="type: ${types}">
+        <p Name: [[${type.name}]]></p>
+        <p Features: [[${type.features]]></p>
+        <a href="http://localhost:8080/show-types">Back to Home</a>
+    </div>
+</body>
+</html>
